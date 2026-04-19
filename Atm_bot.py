@@ -55,12 +55,12 @@ class AtmBot:
         if user_pin == self.pin:
             amount = int(input('Enter the amount: '))
             if amount <= self.balance:
-                self.balance = self.balance - amount  # ✅ Fixed
+                self.balance = self.balance - amount  #
                 print('Withdrawn successfully. Balance is', self.balance)
             else:
                 print('Insufficient balance!')
         else:
-            print('Incorrect pin!')  # ✅ Fixed indentation
+            print('Incorrect pin!')  # 
         self.menu()
 
 obj = AtmBot()
